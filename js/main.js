@@ -33,7 +33,7 @@ function retornarProducto(producto) {
     return `   <div class="producto" id="producto-${producto.id_producto}">
         <a href="#" class="text-decoration-none">
         <img src="img/sinstock.png" style="width: 50px;" class="oculto">
-            <img src="${producto.img}" class="w-100 foto">
+            <img src="${producto.img}" class="w-100 foto" fetchpriority="high">
                 <h6 class="font-cormorant mt-3 mb-0">${producto.nombre}</h6>
                 <p class="price mt-2 mb-2">$${producto.precio}</p>
         </a>
